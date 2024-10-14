@@ -1,5 +1,5 @@
 
-/* 
+/*
 Name: Sina Asheghalishahi
 KUID: 3127403
 LAB Session: Wednesday 9 a.m.
@@ -18,14 +18,15 @@ Collaborators: None
 //Matrix Addition Func.
 int* addMatrices(int m1[][COLS1], int m2[][COLS2], int rows1, int cols1, int rows2, int cols2){
     int sumMatrix[rows1][cols1];
+
     if(rows1 != rows2 || cols1 != cols2){
         printf("Invalid dimensions for addition.\n");
-        return NULL;
     }
     else{
         for(int i = 0; i < rows1; i++){
             for(int j = 0; j < cols1; j++){
                 sumMatrix[i][j] = m1[i][j] + m2[i][j];
+                
             }
         }
     }
@@ -46,6 +47,7 @@ int* multipyMatrices(int m1[][COLS1], int m2[][COLS2], int rows1, int cols1, int
                 for(int c = 0; c < rows2; c++){
                     prodMatrix[i][j] += m1[i][c] * m2[c][j];
                 }
+               
             }
         }
     }
